@@ -14,7 +14,7 @@ export default async function Main() {
         }
     });
 
-    const { data } = await res.json() as Data;
+    const { data: { attributes } } = await res.json() as Data;
 
     return (
         <div className="fixed left-[50%] top-[50%] bg-slate-300 min-w-[400px] translate-x-[-50%] translate-y-[-50%] p-5 rounded-3xl">
