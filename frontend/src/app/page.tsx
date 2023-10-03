@@ -8,7 +8,7 @@ interface Data {
 }
 
 export default async function Main() {
-    const res = await fetch(`http://${process.env.HOST}:1337/api/data`, {
+    const res = await fetch(`http://${process.env.NEXT_PUBLIC_HOST}:1337/api/data`, {
         next: {
             revalidate: 2
         }
